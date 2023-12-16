@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useStyletron } from "baseui";
 import { StyleObject } from "styletron-react";
 
-import image1 from "../../../assets/images/intro.jpeg";
+import image1 from "../../../assets/images/intro1.jpeg";
 import image2 from "../../../assets/images/intro2.jpeg";
 import image3 from "../../../assets/images/intro3.jpeg";
 import image4 from "../../../assets/images/intro4.jpeg";
