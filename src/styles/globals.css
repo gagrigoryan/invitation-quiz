@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&display=swap');
+
+body {
+    background: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    width: fit-content !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
