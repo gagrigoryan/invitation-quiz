@@ -38,7 +38,7 @@ export const HomePage: React.FC = () => {
         </HeadingLarge>
         <div className={css({ marginBottom: "48px" })}>
           <LabelMedium>
-            Если ты получила пригласительное, значит ты приглашена на&nbsp;семейную фотосессию студии EXPROMT
+            Если Ты получила пригласительное, значит мы ждем Тебя на&nbsp;семейной фотосессии студии EXPROMT
           </LabelMedium>
           <LabelSmall marginTop="8px" color={theme.colors.warning200}>
             Дата и&nbsp;время фотосессии будет известно в&nbsp;скором времени!
