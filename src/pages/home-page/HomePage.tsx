@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadingLarge, LabelMedium, LabelSmall } from "baseui/typography";
+import { HeadingLarge, LabelLarge, LabelMedium } from "baseui/typography";
 import { useStyletron } from "baseui";
 import { StyleObject } from "styletron-react";
 import { Button } from "../../components/button";
@@ -34,15 +34,15 @@ export const HomePage: React.FC = () => {
     <div>
       <section className={css({ ...introStyles, ...containerStyles })}>
         <HeadingLarge marginBottom="24px">
-          Студия <span className={css({ color: theme.colors.warning400 })}>EXPROMT</span> приветствует Тебя
+          Студия <span className={css({ color: theme.colors.negative200 })}>EXPROMT</span> приветствует Тебя
         </HeadingLarge>
         <div className={css({ marginBottom: "48px" })}>
-          <LabelMedium>
+          <LabelLarge>
             Если Ты получила пригласительное, значит мы ждем Тебя на&nbsp;семейной фотосессии студии EXPROMT
-          </LabelMedium>
-          <LabelSmall marginTop="8px" color={theme.colors.warning200}>
+          </LabelLarge>
+          <LabelMedium marginTop="8px" color={theme.colors.negative100}>
             Дата и&nbsp;время фотосессии будет известно в&nbsp;скором времени!
-          </LabelSmall>
+          </LabelMedium>
         </div>
       </section>
       <SliderSection />
