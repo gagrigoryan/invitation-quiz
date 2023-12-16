@@ -20,13 +20,17 @@ const slideWrapperStyles = (isActive: boolean): StyleObject => ({
   height: "76vw",
   transform: `scale(${isActive ? 0.92 : 1})`,
   transition: "transform 0.6s ease",
+  overflow: "hidden",
 });
 
-const imageStyles: StyleObject = {
+const imageStyles = (isActive: boolean): StyleObject => ({
   width: "100%",
   height: "100%",
   objectFit: "cover",
-};
+  transform: `scale(${isActive ? 1.2 : 1})`,
+  filter: `blur(${isActive ? 0 : 2}px)`,
+  transition: "transform 0.6s ease",
+});
 
 export const SliderSection: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState<number>(-1);
@@ -44,7 +48,7 @@ export const SliderSection: React.FC = () => {
         {slideImages.map((slideItem, index) => (
           <SwiperSlide key={slideItem}>
             <div className={css(slideWrapperStyles(activeSlide === index))}>
-              <img className={css(imageStyles)} src={slideItem} alt="" />
+              <img className={css(imageStyles(activeSlide === index))} src={slideItem} alt="" />
             </div>
           </SwiperSlide>
         ))}
