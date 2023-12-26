@@ -34,7 +34,7 @@ export const Timer: React.FC = () => {
   return (
     <div className={css(containerStyles)}>
       <TimerBox count={remainingTime?.days ?? 0} title="Дней" />
-      <TimerBox count={remainingTime?.hours ?? 0} title="Часов" />
+      <TimerBox count={remainingTime?.hours ?? 0} title="Часа" />
       <TimerBox count={remainingTime?.minutes ?? 0} title="Минут" />
       <TimerBox count={remainingTime?.seconds ?? 0} title="Секунд" />
     </div>
