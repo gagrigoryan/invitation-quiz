@@ -9,7 +9,7 @@ type PageLayoutProps = {
 };
 
 const pageStyles: StyleObject = {
-  paddingBottom: "60px",
+  paddingBottom: "100px",
 };
 
 const headerStyles: StyleObject = {

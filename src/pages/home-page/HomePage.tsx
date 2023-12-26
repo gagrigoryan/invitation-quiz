@@ -1,11 +1,11 @@
 import React from "react";
-import { HeadingLarge, LabelLarge, LabelMedium } from "baseui/typography";
+import { HeadingLarge, HeadingMedium, LabelLarge, LabelMedium } from "baseui/typography";
 import { useStyletron } from "baseui";
 import { StyleObject } from "styletron-react";
-import { Button } from "../../components/button";
 import { SliderSection } from "./slider-section";
 
 import "swiper/css";
+import { Timer } from "../../components/timer/Timer";
 
 const introStyles: StyleObject = {
   width: "100%",
@@ -23,8 +23,14 @@ const containerStyles: StyleObject = {
 const actionStyles: StyleObject = {
   width: "100%",
   display: "flex",
-  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
   marginTop: "48px",
+};
+
+const headingStyles: StyleObject = {
+  maxWidth: "80%",
+  textAlign: "center",
 };
 
 export const HomePage: React.FC = () => {
@@ -47,7 +53,10 @@ export const HomePage: React.FC = () => {
       </section>
       <SliderSection />
       <section className={css(actionStyles)}>
-        <Button>Пройти Опрос</Button>
+        <HeadingMedium className={css(headingStyles)} marginBottom="8px">
+          До Нового Года осталось
+        </HeadingMedium>
+        <Timer />
       </section>
     </div>
   );
